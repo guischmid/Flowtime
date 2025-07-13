@@ -1,5 +1,3 @@
-Of course. Here is the Markdown source for your README file.
-
 
 # Flowtime for macOS
 
