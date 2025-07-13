@@ -5,6 +5,9 @@ Of course. Here is the Markdown source for your README file.
 
 A simple, beautiful menu bar app for macOS based on the Flowtime Technique. This is a small side project built to learn SwiftUI and create a useful productivity tool. It helps you focus by tracking your work sessions and suggesting natural break times, allowing you to stay in the zone without the rigid constraints of a Pomodoro timer.
 
+[**Download the Latest Release**](https://github.com/guischmid/Flowtime/releases/latest)
+
+
 ## Screenshots
 ### Break Settings
 <img width="326" height="458" alt="Screenshot 2025-07-13 at 14 13 27" src="https://github.com/user-attachments/assets/539a4d39-3d1c-44ef-af32-e4eeccb58136" />
