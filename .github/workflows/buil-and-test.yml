@@ -30,5 +30,5 @@ jobs:
 
       # Step 3 (Optional but recommended): Run tests
       # This command will run any unit tests you add to the project later
-      # - name: Run tests
-      #   run: xcodebuild -scheme Flowtime -sdk macosx -destination 'platform=macOS' test
+      - name: Run tests
+        run: xcodebuild -scheme Flowtime -sdk macosx -destination 'platform=macOS' test
