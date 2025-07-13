@@ -1,0 +1,34 @@
+# A name for your workflow, which will appear in the "Actions" tab on GitHub
+name: Build and Test
+
+# This section defines when the workflow will run
+on:
+  # Run on every push to the main branch
+  push:
+    branches: [ "main" ]
+  # Also run on every pull request that targets the main branch
+  pull_request:
+    branches: [ "main" ]
+
+# A workflow is made up of one or more jobs that can run in parallel or sequentially
+jobs:
+  # We'll define a single job called "build"
+  build:
+    # This job will run on a virtual machine running the latest version of macOS
+    runs-on: macos-latest
+
+    # The steps that make up the job
+    steps:
+      # Step 1: Check out your repository's code onto the runner
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Build the app using Xcode's command-line tools
+      # This command ensures the project compiles and builds successfully
+      - name: Build app
+        run: xcodebuild -scheme Flowtime -sdk macosx -configuration Release build
+
+      # Step 3 (Optional but recommended): Run tests
+      # This command will run any unit tests you add to the project later
+      # - name: Run tests
+      #   run: xcodebuild -scheme Flowtime -sdk macosx -destination 'platform=macOS' test
